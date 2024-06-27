@@ -1,9 +1,10 @@
 export const getFormattedDate = (date) => {
-  return date.toLocaleDateString("en-US", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  // return date.toLocaleDateString("en-US", {
+  //   day: "numeric",
+  //   month: "long",
+  //   year: "numeric",
+  // });
+  return date.toISOString().slice(0, 10);
 };
 
 export const getDateMinusDays = (date, days) => {
